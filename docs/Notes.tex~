@@ -1,0 +1,92 @@
+\documentclass{article}
+\begin{document}
+\title{Design progress document}
+\author{Deepak Subramanian}
+\maketitle
+\section{First Iteration}
+There will be three tables
+\begin{enumerate}
+\item
+images 
+
+image id 
+
+image location 
+
+image name
+\item
+users 
+
+user id 
+
+user name 
+
+user email id 
+
+user rating
+\item
+concept
+
+concept id
+
+concept name
+
+concept description
+
+\item
+transaction 
+
+transaction id 
+
+image id 
+
+user id 
+
+concept id
+
+rating
+\end{enumerate}
+
+\subsection {Screens}
+There will be a concept at the top which will define the concept of the image
+There will be one screen/page which will have an image and a multiple choice below it.
+There will be a done button at the bottom
+\subsection {Transaction}
+As soon as the user presses done, the transaction table will be populated with the selected rating.
+\section{Django implementation}
+The installation of Django is now completed on my local box and on the ischool webserver.
+I am currently running a Django application which has the following functionality
+\begin{enumerate}
+\item
+Loads an image from the table victoryimages and then displays it in an html page
+\item
+Gives an option of rating the image as good,ok or bad
+\item
+Depending on the vote, the rating of the image is increased or decreased
+\end{enumerate}
+
+\subsection{Issues with the current feature}
+\begin{enumerate}
+\item
+No User 
+\item
+No concept
+\item
+No link between user, image and concept
+\item
+Image only has rating
+\item
+The html is not pretty
+\item
+The flow is not yet clear
+\end{enumerate}
+\subsection{Next aim}
+\begin{enumerate}
+\item
+Create a user login and logout functionality using Django's native user functionality
+\item
+Create a more robust database model which is in line with Django's user functionality
+\item
+Create a more clear url naming convention
+\end{enumerate}
+\end{document}
